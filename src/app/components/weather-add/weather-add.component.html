@@ -1,0 +1,18 @@
+<input placeholder="insert city name" [(ngModel)]="cityName">
+<!--<input placeholder="insert description" [(ngModel)]="cityDescription">
+<input placeholder="insert temperature" [(ngModel)]="cityTemperature">-->
+
+<button (click)="submitForm()">add city</button>
+<span *ngIf="cityNotFound" style="color:red;">city did not found</span>
+
+
+
+
+<!-- <form #f="ngForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+        <label for="cityNameForm">City Name</label>
+        <input required id="cityNameForm" type="text" #cityNameForm=ngModel ngModel name="cityNameForm" (change)="log(cityNameForm)">
+        <div *ngIf="!cityNameForm.valid && cityNameForm.touched"  [ngStyle]="{'color':'red'}">City Name Is Required</div>
+    </div>
+    <button type="submit" [disabled]="f.invalid">add city</button>
+</form> -->

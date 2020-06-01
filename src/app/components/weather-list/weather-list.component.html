@@ -1,0 +1,4 @@
+<section class="weather-list">
+  <app-weather-add (addItem)="addWeatherItem($event)"></app-weather-add>
+  <app-weather-item *ngFor="let weatherItem of weatherItems" [item] = weatherItem></app-weather-item>
+</section>
